@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual país você mora ?</h1>
+    
+    <input type="text"  id="tx">Pais
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="re">
+
+    </div>
+    <script>
+        function calcular() {
+            var tt = window.document.querySelector('input#tx')
+            var tx = String(tt.value)
+            var t0 = window.document.querySelector('div#re')
+            var t1 = 'Brasil'
+            t0.innerHTML = `<p>Você mora em <strong>${tx}</strong></p>`
+            if (tx == 'Brasil') {
+                t0.innerHTML += `Você é Brasileiro!`
+            } else {
+                t0.innerHTML += `<p>Você é Estrangeiro.</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>
