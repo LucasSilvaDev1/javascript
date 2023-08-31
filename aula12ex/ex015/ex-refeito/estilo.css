@@ -17,9 +17,13 @@ section {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
 }
-
+div#res > img {
+    border-radius: 50%;
+    box-shadow: 2px 4px solid black;
+}
 footer {
     color: white;
     font-style: italic;
     text-align: center;
 }
+
